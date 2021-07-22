@@ -20,6 +20,18 @@ class _TextFormState extends State<TextForm> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             TextField(
+              decoration: InputDecoration(
+                fillColor: Colors.lightBlue[50],
+                filled: true,
+                icon: Icon(Icons.adb),
+                prefixIcon: Icon(Icons.person),
+                // prefixText: "Name:",
+                // prefixStyle: TextStyle(color: Colors.blue),
+                labelText: "Nama Lengkap",
+                hintText: "Nama KTP",
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+              ),
               onChanged: (value) {
                 setState(() {});
               },
